@@ -2,6 +2,6 @@
 
 @section("contenuto")
 
-<h1>prova Home</h1>
+<h1>prova Movies</h1>
 
 @endsection
