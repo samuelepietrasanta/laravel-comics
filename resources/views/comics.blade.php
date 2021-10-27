@@ -2,6 +2,13 @@
 
 @section("contenuto")
 
-<h1>prova Comics</h1>
+@foreach ($fumetti as $fumetto)
+
+<a class="singolo_fumetto" href='{{url("/comic/$loop->index")}}'>
+    {{$fumetto['title']}}
+
+</a>
+@endforeach
+
 
 @endsection

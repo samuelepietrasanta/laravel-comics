@@ -23,9 +23,15 @@ Route::get('/characters', function () {
 
 
 Route::get('/comics', function () {
-    return view('comics');
+    $fumetti = config('comics');
+    return view('comics' , ['fumetti' => $fumetti]);
 })-> name ("comics") ;
 
 Route::get('/movies', function () {
     return view('movies');
 })-> name ("movies");
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics');
+    return view('comic', ['comics' => $comics[$id]]);
+})-> name ("comic") ;
