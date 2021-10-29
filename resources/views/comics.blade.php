@@ -4,10 +4,15 @@
 
 @foreach ($fumetti as $fumetto)
 
-<a class="singolo_fumetto" href='{{url("/comic/$loop->index")}}'>
-    {{$fumetto['title']}}
+<div class="comics_card">
 
-</a>
+    <a class="link_fumetto" href='{{url("/comic/$loop->index")}}'>
+        {{$fumetto['title']}}
+    </a>
+
+</div>
+
+
 @endforeach
 
 
