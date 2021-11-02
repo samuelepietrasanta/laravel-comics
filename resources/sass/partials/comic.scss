@@ -1,0 +1,42 @@
+.comic_title{
+    color:#0282F9;
+    text-align: center;
+}
+
+.single_comic_price{
+    text-align: center;
+    background-color: #0282F9 ;
+    color:rgb(226, 222, 222);
+}
+
+.single_comic_section{
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+
+    .single_comic_image{
+        margin-right: 50px;
+
+        img{
+            height: 400px;
+        }
+    }
+
+    .single_comic_description{
+        width: 400px;
+        height: 400px;
+
+        p{
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+        }
+
+        button{
+            background-color: #0282F9;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border:none;
+            color:white;
+        }
+    }
+}

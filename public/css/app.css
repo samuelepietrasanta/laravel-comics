@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: black;
 }
 
 .header_container {
@@ -21,7 +22,7 @@ body {
   margin-right: 25px;
 }
 .header_container .header_menu_list li a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -85,8 +86,59 @@ body {
   overflow: hidden;
 }
 
-.comics_card .link_fumetto {
-  color: black;
-  display: block;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1C1C1C;
+}
+.cards-container .comics_card {
+  text-align: center;
+  width: 400px;
+  margin-bottom: 25px;
+}
+.cards-container .comics_card .link_fumetto {
+  color: white;
   margin: 15px;
+  text-decoration: none;
+}
+.cards-container .comics_card .immagine_fumetto img {
+  width: 220px;
+}
+
+.comic_title {
+  color: #0282F9;
+  text-align: center;
+}
+
+.single_comic_price {
+  text-align: center;
+  background-color: #0282F9;
+  color: #e2dede;
+}
+
+.single_comic_section {
+  display: flex;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+.single_comic_section .single_comic_image {
+  margin-right: 50px;
+}
+.single_comic_section .single_comic_image img {
+  height: 400px;
+}
+.single_comic_section .single_comic_description {
+  width: 400px;
+  height: 400px;
+}
+.single_comic_section .single_comic_description p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.single_comic_section .single_comic_description button {
+  background-color: #0282F9;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  color: white;
 }
