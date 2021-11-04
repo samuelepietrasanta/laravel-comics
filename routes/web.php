@@ -27,6 +27,18 @@ Route::get('/comics', function () {
     return view('comics' , ['fumetti' => $fumetti]);
 })-> name ("comics") ;
 
+
+Route::get('/games', function () {
+    $giochi = config('games');
+    return view('games' , ['giochi' => $giochi]);
+})-> name ("games") ;
+
+Route::get('/game/{id}' , function($id) {
+    $giochi = config('games');
+    return view('game', ['games' => $giochi[$id]]);
+
+}) -> name ("game");
+
 Route::get('/movies', function () {
     return view('movies');
 })-> name ("movies");

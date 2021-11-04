@@ -28,6 +28,7 @@ body {
 }
 .header_container .header_menu_list input {
   border: none;
+  background-color: black;
 }
 .header_container .header_menu_list .header_button {
   border: none;
@@ -140,5 +141,24 @@ body {
   padding: 10px 20px;
   border-radius: 30px;
   border: none;
+  color: white;
+}
+
+.games_container {
+  display: flex;
+}
+.games_container .single_game {
+  width: 200px;
+  margin: 25px;
+}
+.games_container .single_game .game_text {
+  color: white;
+  text-align: center;
+}
+.games_container .single_game img {
+  width: 200px;
+}
+
+.title_single_game {
   color: white;
 }

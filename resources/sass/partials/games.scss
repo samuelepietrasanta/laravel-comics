@@ -1,0 +1,20 @@
+.games_container{
+
+    display: flex;
+
+    .single_game{
+        width: 200px;
+        margin: 25px;
+
+        .game_text{
+            color:white;
+            text-align: center;
+        }
+
+        img{
+            width:200px;
+        }
+
+    }
+
+}
